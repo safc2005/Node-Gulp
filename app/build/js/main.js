@@ -1,0 +1,1 @@
+!function(){var n={cacheDom:function(){this.$mEl=document.getElementById("main")},init:function(){this.cacheDom(),this.render()},render:function(){this.$mEl.innerHTML=this.string},string:"Stephen"};document.addEventListener("DOMContentLoaded",function(t){n.init()})}();
