@@ -5,18 +5,23 @@
   var safr = {
     // caching the DOM elements that are needed thtoughout the process
     cacheDom: function () {
-      this.$mEl = document.getElementById('main');
+      this.mainElement = document.getElementById('main');
+      this.subElement = document.getElementById('time');
     },
     // initilised the entire project
     init: function () {
       this.cacheDom();
-      this.render();
+      this._render();
     },
+    getCurrentTimeStamp: function () {
+      return new Date();
+    },
+    stringMain: 'This test string is being inserted by the main.js file via modular JS (main string)',
     // renders the DOM with the required changes
-    render: function () {
-      this.$mEl.innerHTML = this.string;
-    },
-    string: 'This test STRING is being inserted by the main.js file via modular JS'
+    _render: function () {
+      this.mainElement.innerHTML = this.stringMain;
+      this.subElement.innerHTML = 'thie current date and time is:' + this.getCurrentTimeStamp();
+    }
   };
 
   // awaits for the DOM to be loaded then calls the init module
