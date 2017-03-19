@@ -16,7 +16,7 @@
     render: function () {
       this.$mEl.innerHTML = this.string;
     },
-    string: 'This test is being inserted by the main.js file via modular JS'
+    string: 'This test STRING is being inserted by the main.js file via modular JS'
   };
 
   // awaits for the DOM to be loaded then calls the init module

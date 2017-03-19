@@ -12,7 +12,7 @@ gulp.task('scripts', function () {
 // scripts tasks
 // console log example
 gulp.task('consolelog', function () {
-  console.log('example');
+  console.log('example string test');
 });
 
 // watch task - watches js - and run scripts task on each save
